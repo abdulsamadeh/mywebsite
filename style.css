@@ -1,0 +1,360 @@
+﻿body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1e293b;
+  padding: 20px;
+}
+
+.image-section img {
+  width: 250px;
+  border-radius: 15px;
+  margin-top: 20px;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.about {
+  background-color: #334155;
+  padding: 30px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #1e293b;
+  padding: 10px;
+  margin-top: 20px;
+}
+/* ===== Navbar Design ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.logo {
+  font-size: 24px;
+  color: #00ffcc;
+  letter-spacing: 1px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar a:hover {
+  color: #00ffcc;
+}
+/* ===== Contact Form Design ===== */
+.contact {
+  background-color: #334155;
+  padding: 40px;
+  margin: 30px auto;
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+input, textarea {
+  width: 90%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #00ffcc;
+  border: none;
+  color: #0f172a;
+  font-weight: bold;
+  padding: 10px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #14b8a6;
+}
+/* ===== Background Animation ===== */
+body {
+  background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #e2e8f0;
+  scroll-behavior: smooth;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Smooth Scroll for all sections */
+html {
+  scroll-behavior: smooth;
+}
+#topBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #00ffcc;
+  color: #0f172a;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+  box-shadow: 0 0 10px #00ffcc;
+  transition: 0.3s;
+}
+
+#topBtn:hover {
+  background-color: #14b8a6;
+}
+.typing-wrap {
+  display: inline-block;
+  font-family: monospace;
+  font-size: 20px;
+  color: #00ffcc;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+
+/* typing animation: change 60ch to approx length of text */
+.typing {
+  display: inline-block;
+  animation: typing 4s steps(40, end) infinite;
+}
+
+/* cursor blink */
+.cursor {
+  display: inline-block;
+  margin-left: 6px;
+  color: #00ffcc;
+  animation: blink 0.7s steps(1) infinite;
+}
+
+@keyframes typing {
+  0% { width: 0ch; }
+  50% { width: 32ch; } /* type */
+  60% { width: 32ch; } /* pause */
+  100% { width: 0ch; } /* delete (simulated by shrinking) */
+}
+
+/* make sure the span takes a width for the animation */
+.typing { width: 32ch; }
+
+/* cursor blink */
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+/* PROJECTS SECTION */
+.projects {
+  background: #0f172a;
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.project-card {
+  background: #1e293b;
+  border-radius: 15px;
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 255, 204, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px #00ffcc;
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #00ffcc;
+}
+
+.project-card h3 {
+  color: #00ffcc;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  color: #cbd5e1;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.project-btn {
+  padding: 8px 20px;
+  background: #00ffcc;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.project-btn:hover {
+  background: white;
+  box-shadow: 0 0 15px #00ffcc;
+}
+/* CONTACT SECTION */
+.contact {
+  background: #1e293b;
+  color: #fff;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc;
+}
+
+.contact p {
+  color: #cbd5e1;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.contact-form {
+  background: #0f172a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,255,204,0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 8px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-btn {
+  width: 100%;
+  padding: 10px;
+  background: #00ffcc;
+  color: #0f172a;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact-btn:hover {
+  background: white;
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.contact-info {
+  max-width: 400px;
+  text-align: left;
+}
+
+.contact-info h3 {
+  color: #00ffcc;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.contact-info a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}

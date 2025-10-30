@@ -1,0 +1,160 @@
+﻿ <!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+ <meta charset="UTF-8">
+ 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+ <title>My First Website</title>
+ 
+ <link rel="stylesheet" href="style.css">
+</head><nav class="navbar">
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to <span class="highlight">Abdul Samad EH</span></h1>
+    <div class="typing-wrap">
+      <span id="typed"></span><span class="cursor">|</span>
+    </div>
+    <p>Learning Ethical Hacking & Cybersecurity 💻</p>
+    <button class="hero-btn">Explore My Work</button>
+  </div>
+  <div class="hero-img">
+    <img src="Pic.JPG" alt="My Photo">
+  </div>
+</section>
+ <h2 class="logo">DWX91</h2>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Gallery</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav> 
+<body>
+  <header>
+  
+  <h1>Welcome to My Website</h1>
+  
+  <p>This is my first website created with HTML, CSS, and JavaScript!</p>
+ 
+ </header>
+
+  <section class="image-section">
+  
+  <img src="Pic.JPG" alt="My Photo">
+  </section>
+
+  <section class="about">
+
+<!-- PROJECTS SECTION -->
+<section class="projects" id="projects">
+  <h2>My Projects</h2>
+  <div class="projects-container">
+    
+    <div class="project-card">
+      <img src="Pic.JPG" alt="Project 1">
+      <h3>Cybersecurity Dashboard</h3>
+      <p>A web dashboard to monitor network security and analyze vulnerabilities in real-time.</p>
+      <button class="project-btn">View Project</button>
+    </div>
+
+    <div class="project-card">
+      <img src="Pic.JPG" alt="Project 2">
+      <h3>Termux Ethical Testing Tool</h3>
+      <p>A Termux-based testing tool for educational cybersecurity experiments.</p>
+      <button class="project-btn">View Project</button>
+    </div>
+
+    <div class="project-card">
+      <img src="Pic.JPG" alt="Project 3">
+      <h3>Portfolio Website</h3>
+      <p>A personal website built with HTML, CSS, and JavaScript to showcase my work.</p>
+      <button class="project-btn">View Project</button>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT SECTION -->
+<section class="contact" id="contact">
+  <h2>Contact Me</h2>
+  <p>If you’d like to collaborate or have any questions, feel free to reach out!</p>
+
+  <div class="contact-container">
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="contact-btn">Send Message</button>
+    </form>
+
+    <div class="contact-info">
+      <h3>Connect with me</h3>
+      <p>📧 Email: <a href="mailto:abdulsamadeh@gmail.com">abdulsamade732@gmail.com</a></p>
+      <p>💻 GitHub: <a href="#">github.com/AbdulSamadEH</a></p>
+      <p>📱 WhatsApp: +92 3446696503</p>
+    </div>
+  </div>
+</section>  
+  <h2>About Me</h2>
+  
+  <p>Hello! I'm learning how to build websites using HTML, CSS, and JS.</p>
+ 
+<section class="contact">
+  <h2>Contact Me</h2>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+ </section>
+
+  <footer>
+  
+   
+ </footer>
+
+  <script src="script.js"></script><button id="topBtn">↑</button><!-- FOOTER SECTION -->
+<footer>
+  <p>© 2025 Abdul Samad EH | All Rights Reserved</p>
+  <p>Made with 💻 & ❤️ by ASEH</p>
+</footer>
+
+<!-- SMOOTH SCROLL SCRIPT -->
+<script>
+  // Smooth scrolling for navbar links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+</script> 
+</body>
+</html>
+<script src="script.js"></script>
+<script>
+const topBtn = document.getElementById("topBtn");
+window.onscroll = function() {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+    topBtn.style.display = "block";
+  } else {
+    topBtn.style.display = "none";
+  }
+};
+topBtn.onclick = function() {
+  window.scrollTo({top: 0, behavior: 'smooth'});
+};
+</script>
+<div class="typing-wrap">
+  <span class="typing">I am Abdul Samad EH — Learning CS</span>
+  <span class="cursor">|</span>
+</div>
+<div class="typing-wrap">
+  <span id="typed"></span><span class="cursor">|</span>
+</div>
