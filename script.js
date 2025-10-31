@@ -1,7 +1,7 @@
 function showMessage() {
   alert("Welcome Abdul Samad EH! ?? Your first full website is working!");
 }
-// typing effect — multiple phrases
+// typing effect â€” multiple phrases
 const phrases = [
   "I am Abdul Samad EH",
   "Learning Cybersecurity",
